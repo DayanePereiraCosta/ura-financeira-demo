@@ -72,32 +72,6 @@ flowchart LR
 
 ---
 
-## 🗄️ Modelo de dados
-
-```mermaid
-erDiagram
-    CLIENTES ||--o{ CONTRATOS : possui
-    CONTRATOS ||--o{ PARCELAS : tem
-    CLIENTES {
-        text cpf
-        text nome
-        text email
-    }
-    CONTRATOS {
-        text contrato_id
-        text modalidade
-        numeric taxa_juros_mensal
-        int parcelas_total
-    }
-    PARCELAS {
-        text parcela_id
-        date vencimento
-        text status
-    }
-```
-
----
-
 ## 🚦 Status do projeto
 
 - ✅ Horário de atendimento e feriados
