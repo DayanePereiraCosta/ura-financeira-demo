@@ -64,7 +64,7 @@ O mesmo atendimento está disponível em um **chat dentro de um site de demonstr
 - **Idioma definido no fluxo.** O fluxo do chat define o idioma pt-BR antes de chamar o Lex, que só existe nesse idioma.
 - **Fluxo e widget independentes do site.** Trocar o fluxo no widget do Connect não exige mexer no site.
 - **Demonstração sem autenticação.** O widget não usa JWT, por ser um site estático. Em produção, a identificação do cliente deve vir de um backend.
-- 
+  
 ---
 
 # 🧩 Base comum aos dois canais
@@ -112,9 +112,10 @@ ura-financeira-demo/
     ├── enviarBoleto/
     └── consultarExtrato/
 ```
+
 ---
 
-**Acesso ao site de demonstração: [Aurora Financeira]( https://dayanepereiracosta.github.io/site-demo-modopiloto/)**
+**Acesso ao site de demonstração: [Aurora Financeira](https://dayanepereiracosta.github.io/site-demo-modopiloto/)**
 
 ---
 
