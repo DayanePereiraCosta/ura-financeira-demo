@@ -113,7 +113,7 @@ ura-financeira-demo/
     └── consultarExtrato/
 ```
 
-O site de demonstração do chat fica em um **repositório separado** (`site-demo-modopiloto`), publicado no GitHub Pages.
+## Acesso ao site de demonstração: 
 
 ---
 
