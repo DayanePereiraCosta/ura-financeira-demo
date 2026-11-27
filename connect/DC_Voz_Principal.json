@@ -1,0 +1,1731 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "3d5c739e-c702-47fe-b5a9-5acdbb024933",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": -322.4,
+      "y": -435.2
+    },
+    "ActionMetadata": {
+      "6557d5a4-ac7e-4c94-a191-c35f49fb93f1": {
+        "position": {
+          "x": -8.8,
+          "y": -180
+        },
+        "children": [
+          "483da2d0-1ca7-4ee3-8667-006b64594390"
+        ],
+        "parameters": {
+          "TextToSpeechVoice": {
+            "languageCode": "pt-BR"
+          },
+          "TextToSpeechEngine": {
+            "voiceProvider": "connect:agentic"
+          }
+        },
+        "overrideConsoleVoice": true,
+        "fragments": {
+          "SetContactData": "483da2d0-1ca7-4ee3-8667-006b64594390"
+        },
+        "overrideLanguageAttribute": true
+      },
+      "483da2d0-1ca7-4ee3-8667-006b64594390": {
+        "position": {
+          "x": -8.8,
+          "y": -180
+        },
+        "dynamicParams": []
+      },
+      "Gerar Extrato": {
+        "position": {
+          "x": 435.2,
+          "y": 419.2
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "consultarExtrato"
+          },
+          "LambdaInvocationAttributes": {
+            "cpf": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicMetadata": {
+          "cpf": true
+        }
+      },
+      "3d5c739e-c702-47fe-b5a9-5acdbb024933": {
+        "position": {
+          "x": -268,
+          "y": -183.2
+        }
+      },
+      "2b3c6545-33de-4a92-93e6-bb4699d99314": {
+        "position": {
+          "x": 950.4,
+          "y": -416.8
+        }
+      },
+      "4be242ad-9a7f-4c1d-a480-03499ac5a7ef": {
+        "position": {
+          "x": 516,
+          "y": -445.6
+        }
+      },
+      "Horário de Atendimento": {
+        "position": {
+          "x": 254.4,
+          "y": -178.4
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "HoursOfOperationId": {
+            "displayName": "HorarioAtendimento_ModoPiloto"
+          }
+        },
+        "Hours": {
+          "id": "arn:aws:connect:us-east-1:<ID_DA_CONTA>:instance/<ID_DA_INSTANCIA>/operating-hours/<ID_HORARIO_DE_ATENDIMENTO>",
+          "text": "HorarioAtendimento_ModoPiloto"
+        }
+      },
+      "Sem contrato?": {
+        "position": {
+          "x": 990.4,
+          "y": 424.8
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "51eaba17-4b95-48ff-85fb-2351eb9c210a",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "sem_contrato"
+          }
+        ]
+      },
+      "Extrato enviado?": {
+        "position": {
+          "x": 691.2,
+          "y": 427.2
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "be215512-79da-45a2-a299-99d4aec5d5c0",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "true"
+          }
+        ]
+      },
+      "12a43de3-9a86-4fb6-8d78-9f56150e7749": {
+        "position": {
+          "x": 3162.4,
+          "y": 383.2
+        }
+      },
+      "911cc40e-aaba-4edf-ac90-4e222d0278de": {
+        "position": {
+          "x": 2376.8,
+          "y": 310.4
+        },
+        "conditionMetadata": [
+          {
+            "id": "548ebf58-ce42-46c6-8162-314f6301966d",
+            "value": "1"
+          },
+          {
+            "id": "062d8f34-086c-43b2-a6a7-9307a1d7fea4",
+            "value": "2"
+          }
+        ]
+      },
+      "6211838f-d1cb-4ab3-944d-006003bdc94a": {
+        "position": {
+          "x": 2896.8,
+          "y": 380.8
+        },
+        "parameters": {
+          "Attributes": {
+            "nota_csat": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicParams": [
+          "nota_csat"
+        ]
+      },
+      "1c6fecc8-270b-476e-a79a-908bb8abe952": {
+        "position": {
+          "x": 2647.2,
+          "y": 381.6
+        },
+        "conditionMetadata": [],
+        "countryCodePrefix": "+1"
+      },
+      "3b6aab01-0200-4b7e-ad62-0bdcde3f8cba": {
+        "position": {
+          "x": 2169.6,
+          "y": 160
+        }
+      },
+      "2d152834-260b-4a37-be63-6cce503ae839": {
+        "position": {
+          "x": 1522.4,
+          "y": 813.6
+        }
+      },
+      "e6a804d2-57bd-4bcb-970e-7be29a432c71": {
+        "position": {
+          "x": 1264,
+          "y": 812.8
+        }
+      },
+      "e6afc29d-04fd-4dd1-af32-861ba85896a4": {
+        "position": {
+          "x": 998.4,
+          "y": 806.4
+        },
+        "conditionMetadata": [
+          {
+            "id": "d2bacb6c-5465-4b1f-a4ef-7fc64fc41aaa",
+            "value": "1"
+          }
+        ]
+      },
+      "7f5dd964-207c-4d5d-b058-e04b38eb9661": {
+        "position": {
+          "x": 1780.8,
+          "y": 819.2
+        },
+        "parameters": {
+          "QueueId": {
+            "displayName": "Callback"
+          },
+          "CallerId": {
+            "Number": {
+              "displayName": "<TELEFONE_DE_ORIGEM>"
+            }
+          }
+        },
+        "queue": {
+          "id": "arn:aws:connect:us-east-1:<ID_DA_CONTA>:instance/<ID_DA_INSTANCIA>/queue/<ID_FILA_RETORNO_DE_LIGACAO>",
+          "text": "Callback"
+        }
+      },
+      "731ec1e2-f9b3-414c-9e85-134b643da1d7": {
+        "position": {
+          "x": 2688,
+          "y": 826.4
+        }
+      },
+      "5f4a125c-3b45-4c78-afd8-b5f8ffcb3216": {
+        "position": {
+          "x": 2038.4,
+          "y": 815.2
+        }
+      },
+      "Falha no extrato": {
+        "position": {
+          "x": 1246.4,
+          "y": 430.4
+        },
+        "isFriendlyName": true
+      },
+      "Aviso Extrato": {
+        "position": {
+          "x": 208.8,
+          "y": 416.8
+        },
+        "isFriendlyName": true
+      },
+      "943b26e8-286f-4076-8021-af5e47c947ad": {
+        "position": {
+          "x": 196,
+          "y": 203.2
+        }
+      },
+      "769bce50-2ca5-49f2-bc49-759893c9fc6c": {
+        "position": {
+          "x": 955.2,
+          "y": 200.8
+        }
+      },
+      "8e519964-2634-4300-96ec-28c6d9abcd0d": {
+        "position": {
+          "x": -66.4,
+          "y": 604
+        }
+      },
+      "5c40c7d4-a987-4b7e-9a94-029577443d9b": {
+        "position": {
+          "x": -307.2,
+          "y": 745.6
+        }
+      },
+      "Busca cliente": {
+        "position": {
+          "x": 1266.4,
+          "y": -186.4
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "buscarCliente"
+          },
+          "LambdaInvocationAttributes": {
+            "cpf": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicMetadata": {
+          "cpf": true
+        }
+      },
+      "Gerar boleto": {
+        "position": {
+          "x": 428.8,
+          "y": 208
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "enviarBoleto"
+          },
+          "LambdaInvocationAttributes": {
+            "cpf": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicMetadata": {
+          "cpf": true
+        }
+      },
+      "Boleto enviado?": {
+        "position": {
+          "x": 692.8,
+          "y": 205.6
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "4907b437-f84f-4f78-9bd1-4a71f33a54b5",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "true"
+          }
+        ]
+      },
+      "e8050c45-7b61-449f-bd36-62f235cf0d0f": {
+        "position": {
+          "x": -332.8,
+          "y": 233.6
+        }
+      },
+      "cpf com erro": {
+        "position": {
+          "x": 2452.8,
+          "y": -19.2
+        },
+        "isFriendlyName": true
+      },
+      "0bd04963-3e3b-45fb-940a-02199a6ec518": {
+        "position": {
+          "x": 1496.8,
+          "y": 440.8
+        }
+      },
+      "Erro da lambda?": {
+        "position": {
+          "x": 1576.8,
+          "y": -399.2
+        },
+        "isFriendlyName": true,
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "def3bf0e-a707-48b7-be92-c544511959e4",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "true"
+          }
+        ]
+      },
+      "Saudação": {
+        "position": {
+          "x": 2162.4,
+          "y": -164.8
+        },
+        "isFriendlyName": true
+      },
+      "e0b7364d-74e1-4dad-89b2-d5cb0192feb9": {
+        "position": {
+          "x": 1569.6,
+          "y": -175.2
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "bc43f599-554e-4f12-a388-2f2dc37b8246",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "true"
+          }
+        ]
+      },
+      "Guarda dados": {
+        "position": {
+          "x": 1866.4,
+          "y": -175.2
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "Attributes": {
+            "primeiro_nome": {
+              "useDynamic": true
+            },
+            "email": {
+              "useDynamic": true
+            },
+            "cpf": {
+              "useDynamic": true
+            },
+            "pontos": {
+              "useDynamic": true
+            },
+            "cpf_mascarado": {
+              "useDynamic": true
+            },
+            "nome": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicParams": [
+          "primeiro_nome",
+          "email",
+          "cpf",
+          "pontos",
+          "cpf_mascarado",
+          "nome"
+        ]
+      },
+      "fbaef95a-0054-43c5-97b7-ecfc4c16f290": {
+        "position": {
+          "x": 514.4,
+          "y": -177.6
+        }
+      },
+      "Pega o cpf": {
+        "position": {
+          "x": 987.2,
+          "y": -184.8
+        },
+        "isFriendlyName": true,
+        "conditionMetadata": [],
+        "countryCodePrefix": "+1"
+      },
+      "f47448e6-43ee-4004-8f65-702b793f0138": {
+        "position": {
+          "x": 744.8,
+          "y": -280.8
+        }
+      },
+      "6041f440-1e29-4940-b3eb-c092dd3771c2": {
+        "position": {
+          "x": 750.4,
+          "y": -87.2
+        }
+      },
+      "d1def0e5-ade6-4ca3-8f49-d7f9f84bc7d7": {
+        "position": {
+          "x": 1829.6,
+          "y": 136.8
+        }
+      },
+      "7a3773d0-da85-413d-b00a-0ee5cf013aa9": {
+        "position": {
+          "x": -294.4,
+          "y": 964.8
+        }
+      },
+      "Erros do menu": {
+        "position": {
+          "x": -307.2,
+          "y": 492
+        },
+        "isFriendlyName": true
+      },
+      "c189ba4c-4a9a-4c57-98d5-1665862df98c": {
+        "position": {
+          "x": -57.6,
+          "y": 806.4
+        }
+      },
+      "067fffa9-3450-4a11-ad5f-f9710105804e": {
+        "position": {
+          "x": -72.8,
+          "y": 204
+        },
+        "conditionMetadata": [
+          {
+            "id": "3df2b4ce-4586-4637-b10c-52d9fc97a926",
+            "value": "1"
+          },
+          {
+            "id": "6095ce76-9e33-46a0-8ae4-026766598936",
+            "value": "2"
+          },
+          {
+            "id": "baca9284-0e91-4e12-ab05-dfba89eb9910",
+            "value": "9"
+          },
+          {
+            "id": "bebd838f-e3cf-43b7-b0d2-359e2bc9fea0",
+            "value": "0"
+          }
+        ]
+      },
+      "b62a8fcf-4f97-4b0e-906e-12c7918d9606": {
+        "position": {
+          "x": 2780,
+          "y": -10.4
+        }
+      },
+      "2d0db328-c915-40e6-a514-da8320edf065": {
+        "position": {
+          "x": 736.8,
+          "y": 801.6
+        }
+      },
+      "05e889e8-3f93-41c1-8504-f5b8e6d35d80": {
+        "position": {
+          "x": 2438.4,
+          "y": 780
+        }
+      },
+      "3a4bdc1b-925a-4964-9a1b-29d31d06794b": {
+        "position": {
+          "x": 211.2,
+          "y": 802.4
+        },
+        "parameters": {
+          "QueueId": {
+            "displayName": "Atendente"
+          }
+        },
+        "queue": {
+          "text": "Atendente"
+        }
+      },
+      "c2611828-886c-400f-9224-4f5d5b9af499": {
+        "position": {
+          "x": 456,
+          "y": 790.4
+        },
+        "parameters": {
+          "EventHooks": {
+            "CustomerQueue": {
+              "displayName": "Fila_Espera_ModoPiloto"
+            }
+          }
+        },
+        "contactFlow": {
+          "text": "Fila_Espera_ModoPiloto",
+          "id": "arn:aws:connect:us-east-1:<ID_DA_CONTA>:instance/<ID_DA_INSTANCIA>/contact-flow/<ID_FLUXO_DC_Voz_Fila_Espera>"
+        },
+        "customerOrAgent": true
+      },
+      "7758a4c1-68d0-4112-a911-6ba6384ce886": {
+        "position": {
+          "x": 346.4,
+          "y": 1029.6
+        },
+        "parameters": {
+          "EventHooks": {
+            "CustomerRemaining": {
+              "displayName": "Pesquisa_Pos_Atendimento"
+            }
+          }
+        },
+        "contactFlow": {
+          "text": "Pesquisa_Pos_Atendimento",
+          "id": "arn:aws:connect:us-east-1:<ID_DA_CONTA>:instance/<ID_DA_INSTANCIA>/contact-flow/<ID_FLUXO_DC_Voz_Pesquisa>"
+        }
+      }
+    },
+    "Annotations": [],
+    "name": "DC_Voz_Principal",
+    "description": "Fluxo Day",
+    "type": "contactFlow",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "TextToSpeechVoice": "LARISSA",
+        "TextToSpeechEngine": "connect:agentic"
+      },
+      "Identifier": "6557d5a4-ac7e-4c94-a191-c35f49fb93f1",
+      "Type": "UpdateContactTextToSpeechVoice",
+      "Transitions": {
+        "NextAction": "483da2d0-1ca7-4ee3-8667-006b64594390",
+        "Errors": [
+          {
+            "NextAction": "05e889e8-3f93-41c1-8504-f5b8e6d35d80",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LanguageCode": "pt-BR"
+      },
+      "Identifier": "483da2d0-1ca7-4ee3-8667-006b64594390",
+      "Type": "UpdateContactData",
+      "Transitions": {
+        "NextAction": "Horário de Atendimento",
+        "Errors": [
+          {
+            "NextAction": "05e889e8-3f93-41c1-8504-f5b8e6d35d80",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:<ID_DA_CONTA>:function:consultarExtrato",
+        "InvocationTimeLimitSeconds": "8",
+        "InvocationType": "SYNCHRONOUS",
+        "LambdaInvocationAttributes": {
+          "cpf": "$.Attributes.cpf"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "Gerar Extrato",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "Extrato enviado?",
+        "Errors": [
+          {
+            "NextAction": "Sem contrato?",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowLoggingBehavior": "Enabled"
+      },
+      "Identifier": "3d5c739e-c702-47fe-b5a9-5acdbb024933",
+      "Type": "UpdateFlowLoggingBehavior",
+      "Transitions": {
+        "NextAction": "6557d5a4-ac7e-4c94-a191-c35f49fb93f1"
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "2b3c6545-33de-4a92-93e6-bb4699d99314",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Nosso atendimento funciona de segunda a sexta, das 8 às 20 horas, exceto feriados. Por favor, ligue novamente dentro desse horário. Obrigado!"
+      },
+      "Identifier": "4be242ad-9a7f-4c1d-a480-03499ac5a7ef",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "2b3c6545-33de-4a92-93e6-bb4699d99314",
+        "Errors": [
+          {
+            "NextAction": "2b3c6545-33de-4a92-93e6-bb4699d99314",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "HoursOfOperationId": "arn:aws:connect:us-east-1:<ID_DA_CONTA>:instance/<ID_DA_INSTANCIA>/operating-hours/<ID_HORARIO_DE_ATENDIMENTO>"
+      },
+      "Identifier": "Horário de Atendimento",
+      "Type": "CheckHoursOfOperation",
+      "Transitions": {
+        "NextAction": "4be242ad-9a7f-4c1d-a480-03499ac5a7ef",
+        "Conditions": [
+          {
+            "NextAction": "fbaef95a-0054-43c5-97b7-ecfc4c16f290",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "True"
+              ]
+            }
+          },
+          {
+            "NextAction": "4be242ad-9a7f-4c1d-a480-03499ac5a7ef",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "False"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "4be242ad-9a7f-4c1d-a480-03499ac5a7ef",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.External.motivo"
+      },
+      "Identifier": "Sem contrato?",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "Falha no extrato",
+        "Conditions": [
+          {
+            "NextAction": "769bce50-2ca5-49f2-bc49-759893c9fc6c",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "sem_contrato"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "Falha no extrato",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.External.enviado"
+      },
+      "Identifier": "Extrato enviado?",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "Sem contrato?",
+        "Conditions": [
+          {
+            "NextAction": "769bce50-2ca5-49f2-bc49-759893c9fc6c",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "true"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "Sem contrato?",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Obrigado pela sua avaliação. Até logo!"
+      },
+      "Identifier": "12a43de3-9a86-4fb6-8d78-9f56150e7749",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "3b6aab01-0200-4b7e-ad62-0bdcde3f8cba",
+        "Errors": [
+          {
+            "NextAction": "3b6aab01-0200-4b7e-ad62-0bdcde3f8cba",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "5",
+        "Text": "Sua solicitação foi atendida? Se sim, digite 1. Se não, digite 2."
+      },
+      "Identifier": "911cc40e-aaba-4edf-ac90-4e222d0278de",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "3b6aab01-0200-4b7e-ad62-0bdcde3f8cba",
+        "Conditions": [
+          {
+            "NextAction": "1c6fecc8-270b-476e-a79a-908bb8abe952",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          },
+          {
+            "NextAction": "d1def0e5-ade6-4ca3-8f49-d7f9f84bc7d7",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "3b6aab01-0200-4b7e-ad62-0bdcde3f8cba",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "3b6aab01-0200-4b7e-ad62-0bdcde3f8cba",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "3b6aab01-0200-4b7e-ad62-0bdcde3f8cba",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "nota_csat": "$.StoredCustomerInput"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "6211838f-d1cb-4ab3-944d-006003bdc94a",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "12a43de3-9a86-4fb6-8d78-9f56150e7749",
+        "Errors": [
+          {
+            "NextAction": "3b6aab01-0200-4b7e-ad62-0bdcde3f8cba",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "True",
+        "InputTimeLimitSeconds": "5",
+        "Text": "Em uma escala de 1 a 5, sendo 1 muito insatisfeito e 5 muito satisfeito, como você avalia o nosso atendimento?",
+        "DTMFConfiguration": {
+          "DisableCancelKey": "False",
+          "InterdigitTimeLimitSeconds": "5"
+        },
+        "InputValidation": {
+          "CustomValidation": {
+            "MaximumLength": "1"
+          }
+        }
+      },
+      "Identifier": "1c6fecc8-270b-476e-a79a-908bb8abe952",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "6211838f-d1cb-4ab3-944d-006003bdc94a",
+        "Errors": [
+          {
+            "NextAction": "3b6aab01-0200-4b7e-ad62-0bdcde3f8cba",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "3b6aab01-0200-4b7e-ad62-0bdcde3f8cba",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "CallbackNumber": "$.Customer.PhoneNumber"
+      },
+      "Identifier": "2d152834-260b-4a37-be63-6cce503ae839",
+      "Type": "UpdateContactCallbackNumber",
+      "Transitions": {
+        "NextAction": "7f5dd964-207c-4d5d-b058-e04b38eb9661",
+        "Errors": [
+          {
+            "NextAction": "05e889e8-3f93-41c1-8504-f5b8e6d35d80",
+            "ErrorType": "InvalidCallbackNumber"
+          },
+          {
+            "NextAction": "05e889e8-3f93-41c1-8504-f5b8e6d35d80",
+            "ErrorType": "CallbackNumberNotDialable"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Por favor, ligue novamente mais tarde. Obrigado!"
+      },
+      "Identifier": "e6a804d2-57bd-4bcb-970e-7be29a432c71",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "731ec1e2-f9b3-414c-9e85-134b643da1d7",
+        "Errors": [
+          {
+            "NextAction": "731ec1e2-f9b3-414c-9e85-134b643da1d7",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "5",
+        "Text": "O tempo de espera estimado é superior a 5 minutos. Digite 1 para receber uma chamada de volta assim que um atendente estiver livre ou aguarde para manter sua posição."
+      },
+      "Identifier": "e6afc29d-04fd-4dd1-af32-861ba85896a4",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "e6a804d2-57bd-4bcb-970e-7be29a432c71",
+        "Conditions": [
+          {
+            "NextAction": "2d152834-260b-4a37-be63-6cce503ae839",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "e6a804d2-57bd-4bcb-970e-7be29a432c71",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "e6a804d2-57bd-4bcb-970e-7be29a432c71",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "e6a804d2-57bd-4bcb-970e-7be29a432c71",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "RetryDelaySeconds": "600",
+        "InitialCallDelaySeconds": "99",
+        "MaximumConnectionAttempts": "1",
+        "QueueId": "arn:aws:connect:us-east-1:<ID_DA_CONTA>:instance/<ID_DA_INSTANCIA>/queue/<ID_FILA_RETORNO_DE_LIGACAO>",
+        "CallbackMode": "AgentFirst",
+        "CallerId": {
+          "Number": "<TELEFONE_DE_ORIGEM>"
+        }
+      },
+      "Identifier": "7f5dd964-207c-4d5d-b058-e04b38eb9661",
+      "Type": "CreateCallbackContact",
+      "Transitions": {
+        "NextAction": "5f4a125c-3b45-4c78-afd8-b5f8ffcb3216",
+        "Errors": [
+          {
+            "NextAction": "05e889e8-3f93-41c1-8504-f5b8e6d35d80",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "731ec1e2-f9b3-414c-9e85-134b643da1d7",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Recebemos o seu pedido. Ligaremos para você assim que um atendente estiver disponível. Obrigado!"
+      },
+      "Identifier": "5f4a125c-3b45-4c78-afd8-b5f8ffcb3216",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "731ec1e2-f9b3-414c-9e85-134b643da1d7",
+        "Errors": [
+          {
+            "NextAction": "731ec1e2-f9b3-414c-9e85-134b643da1d7",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Não foi possível consultar o extrato agora. Vamos voltar ao menu."
+      },
+      "Identifier": "Falha no extrato",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "067fffa9-3450-4a11-ad5f-f9710105804e",
+        "Errors": [
+          {
+            "NextAction": "067fffa9-3450-4a11-ad5f-f9710105804e",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Um momento, estou consultando o seu extrato."
+      },
+      "Identifier": "Aviso Extrato",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "Gerar Extrato",
+        "Errors": [
+          {
+            "NextAction": "067fffa9-3450-4a11-ad5f-f9710105804e",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Um momento, estou localizando o seu boleto."
+      },
+      "Identifier": "943b26e8-286f-4076-8021-af5e47c947ad",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "Gerar boleto",
+        "Errors": [
+          {
+            "NextAction": "067fffa9-3450-4a11-ad5f-f9710105804e",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "$.External.frase"
+      },
+      "Identifier": "769bce50-2ca5-49f2-bc49-759893c9fc6c",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "911cc40e-aaba-4edf-ac90-4e222d0278de",
+        "Errors": [
+          {
+            "NextAction": "067fffa9-3450-4a11-ad5f-f9710105804e",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Número digitado é inválido, por favor, tente novamente."
+      },
+      "Identifier": "8e519964-2634-4300-96ec-28c6d9abcd0d",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "067fffa9-3450-4a11-ad5f-f9710105804e",
+        "Errors": [
+          {
+            "NextAction": "05e889e8-3f93-41c1-8504-f5b8e6d35d80",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Não consegui entender a sua resposta. Vou repetir as opções."
+      },
+      "Identifier": "5c40c7d4-a987-4b7e-9a94-029577443d9b",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "067fffa9-3450-4a11-ad5f-f9710105804e",
+        "Errors": [
+          {
+            "NextAction": "067fffa9-3450-4a11-ad5f-f9710105804e",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:<ID_DA_CONTA>:function:buscarCliente",
+        "InvocationTimeLimitSeconds": "8",
+        "InvocationType": "SYNCHRONOUS",
+        "LambdaInvocationAttributes": {
+          "cpf": "$.StoredCustomerInput"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "Busca cliente",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "e0b7364d-74e1-4dad-89b2-d5cb0192feb9",
+        "Errors": [
+          {
+            "NextAction": "05e889e8-3f93-41c1-8504-f5b8e6d35d80",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:<ID_DA_CONTA>:function:enviarBoleto",
+        "InvocationTimeLimitSeconds": "8",
+        "InvocationType": "SYNCHRONOUS",
+        "LambdaInvocationAttributes": {
+          "cpf": "$.Attributes.cpf"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "Gerar boleto",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "Boleto enviado?",
+        "Errors": [
+          {
+            "NextAction": "0bd04963-3e3b-45fb-940a-02199a6ec518",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.External.enviado"
+      },
+      "Identifier": "Boleto enviado?",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "0bd04963-3e3b-45fb-940a-02199a6ec518",
+        "Conditions": [
+          {
+            "NextAction": "769bce50-2ca5-49f2-bc49-759893c9fc6c",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "true"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "0bd04963-3e3b-45fb-940a-02199a6ec518",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "3"
+      },
+      "Identifier": "e8050c45-7b61-449f-bd36-62f235cf0d0f",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "c189ba4c-4a9a-4c57-98d5-1665862df98c",
+        "Conditions": [
+          {
+            "NextAction": "067fffa9-3450-4a11-ad5f-f9710105804e",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "c189ba4c-4a9a-4c57-98d5-1665862df98c",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "c189ba4c-4a9a-4c57-98d5-1665862df98c",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Não encontramos esse CPF. Vamos tentar mais uma vez."
+      },
+      "Identifier": "cpf com erro",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "b62a8fcf-4f97-4b0e-906e-12c7918d9606",
+        "Errors": [
+          {
+            "NextAction": "05e889e8-3f93-41c1-8504-f5b8e6d35d80",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Não foi possível enviar o boleto agora. Vamos voltar ao menu."
+      },
+      "Identifier": "0bd04963-3e3b-45fb-940a-02199a6ec518",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "067fffa9-3450-4a11-ad5f-f9710105804e",
+        "Errors": [
+          {
+            "NextAction": "067fffa9-3450-4a11-ad5f-f9710105804e",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.External.erro"
+      },
+      "Identifier": "Erro da lambda?",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "cpf com erro",
+        "Conditions": [
+          {
+            "NextAction": "0bd04963-3e3b-45fb-940a-02199a6ec518",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "true"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "cpf com erro",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Olá, $.Attributes.primeiro_nome! Que bom ter você por aqui."
+      },
+      "Identifier": "Saudação",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "067fffa9-3450-4a11-ad5f-f9710105804e",
+        "Errors": [
+          {
+            "NextAction": "05e889e8-3f93-41c1-8504-f5b8e6d35d80",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.External.encontrado"
+      },
+      "Identifier": "e0b7364d-74e1-4dad-89b2-d5cb0192feb9",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "Erro da lambda?",
+        "Conditions": [
+          {
+            "NextAction": "Guarda dados",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "true"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "Erro da lambda?",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "primeiro_nome": "$.External.primeiro_nome",
+          "email": "$.External.email",
+          "cpf": "$.External.cpf",
+          "pontos": "$.External.pontos",
+          "cpf_mascarado": "$.External.cpf_mascarado",
+          "nome": "$.External.nome"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "Guarda dados",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "Saudação",
+        "Errors": [
+          {
+            "NextAction": "05e889e8-3f93-41c1-8504-f5b8e6d35d80",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Seja bem vindo a Modo Piloto Consultoria!"
+      },
+      "Identifier": "fbaef95a-0054-43c5-97b7-ecfc4c16f290",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "f47448e6-43ee-4004-8f65-702b793f0138",
+        "Errors": [
+          {
+            "NextAction": "05e889e8-3f93-41c1-8504-f5b8e6d35d80",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "True",
+        "InputTimeLimitSeconds": "8",
+        "Text": "Para começar, digite os 11 números do seu CPF, sem pontos ou traços.",
+        "DTMFConfiguration": {
+          "DisableCancelKey": "False",
+          "InterdigitTimeLimitSeconds": "8"
+        },
+        "InputValidation": {
+          "CustomValidation": {
+            "MaximumLength": "11"
+          }
+        }
+      },
+      "Identifier": "Pega o cpf",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "Busca cliente",
+        "Errors": [
+          {
+            "NextAction": "cpf com erro",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Esta ligação pode ser gravada para fins de qualidade e segurança."
+      },
+      "Identifier": "f47448e6-43ee-4004-8f65-702b793f0138",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "6041f440-1e29-4940-b3eb-c092dd3771c2",
+        "Errors": [
+          {
+            "NextAction": "Pega o cpf",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "VoiceBehavior": {
+          "VoiceRecordingBehavior": {
+            "RecordedParticipants": [
+              "Agent",
+              "Customer"
+            ],
+            "IVRRecordingBehavior": "Disabled"
+          },
+          "VoiceAnalyticsBehavior": {
+            "Enabled": "False"
+          }
+        }
+      },
+      "Identifier": "6041f440-1e29-4940-b3eb-c092dd3771c2",
+      "Type": "UpdateContactRecordingAndAnalyticsBehavior",
+      "Transitions": {
+        "NextAction": "Pega o cpf",
+        "Errors": [
+          {
+            "NextAction": "Pega o cpf",
+            "ErrorType": "NoMatchingError"
+          },
+          {
+            "NextAction": "Pega o cpf",
+            "ErrorType": "ChannelMismatch"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "2"
+      },
+      "Identifier": "d1def0e5-ade6-4ca3-8f49-d7f9f84bc7d7",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "3a4bdc1b-925a-4964-9a1b-29d31d06794b",
+        "Conditions": [
+          {
+            "NextAction": "067fffa9-3450-4a11-ad5f-f9710105804e",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "3a4bdc1b-925a-4964-9a1b-29d31d06794b",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "3a4bdc1b-925a-4964-9a1b-29d31d06794b",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Vou transferir você para um atendente."
+      },
+      "Identifier": "7a3773d0-da85-413d-b00a-0ee5cf013aa9",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "3a4bdc1b-925a-4964-9a1b-29d31d06794b",
+        "Errors": [
+          {
+            "NextAction": "3a4bdc1b-925a-4964-9a1b-29d31d06794b",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "2"
+      },
+      "Identifier": "Erros do menu",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "7a3773d0-da85-413d-b00a-0ee5cf013aa9",
+        "Conditions": [
+          {
+            "NextAction": "5c40c7d4-a987-4b7e-9a94-029577443d9b",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "7a3773d0-da85-413d-b00a-0ee5cf013aa9",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "3a4bdc1b-925a-4964-9a1b-29d31d06794b",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Vou transferir você para um de nossos atendentes. Por favor, aguarde."
+      },
+      "Identifier": "c189ba4c-4a9a-4c57-98d5-1665862df98c",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "3a4bdc1b-925a-4964-9a1b-29d31d06794b",
+        "Errors": [
+          {
+            "NextAction": "3a4bdc1b-925a-4964-9a1b-29d31d06794b",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "5",
+        "Text": "Para receber a segunda via do boleto por e-mail, digite 1. Para consulta de extrato, digite 2. Para falar com atendente agora, digite 9. Para ouvir novamente, digite 0."
+      },
+      "Identifier": "067fffa9-3450-4a11-ad5f-f9710105804e",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "Erros do menu",
+        "Conditions": [
+          {
+            "NextAction": "943b26e8-286f-4076-8021-af5e47c947ad",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          },
+          {
+            "NextAction": "Aviso Extrato",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2"
+              ]
+            }
+          },
+          {
+            "NextAction": "3a4bdc1b-925a-4964-9a1b-29d31d06794b",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "9"
+              ]
+            }
+          },
+          {
+            "NextAction": "e8050c45-7b61-449f-bd36-62f235cf0d0f",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "0"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "Erros do menu",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "Erros do menu",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "Erros do menu",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "3"
+      },
+      "Identifier": "b62a8fcf-4f97-4b0e-906e-12c7918d9606",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "3a4bdc1b-925a-4964-9a1b-29d31d06794b",
+        "Conditions": [
+          {
+            "NextAction": "Pega o cpf",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "3a4bdc1b-925a-4964-9a1b-29d31d06794b",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "05e889e8-3f93-41c1-8504-f5b8e6d35d80",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "2d0db328-c915-40e6-a514-da8320edf065",
+      "Type": "TransferContactToQueue",
+      "Transitions": {
+        "NextAction": "05e889e8-3f93-41c1-8504-f5b8e6d35d80",
+        "Errors": [
+          {
+            "NextAction": "e6afc29d-04fd-4dd1-af32-861ba85896a4",
+            "ErrorType": "QueueAtCapacity"
+          },
+          {
+            "NextAction": "05e889e8-3f93-41c1-8504-f5b8e6d35d80",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Desculpe, ocorreu um erro. por favor, ligue novamente em alguns minutos."
+      },
+      "Identifier": "05e889e8-3f93-41c1-8504-f5b8e6d35d80",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "731ec1e2-f9b3-414c-9e85-134b643da1d7",
+        "Errors": [
+          {
+            "NextAction": "731ec1e2-f9b3-414c-9e85-134b643da1d7",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:us-east-1:<ID_DA_CONTA>:instance/<ID_DA_INSTANCIA>/queue/<ID_FILA_DC_Atendimento_Geral>"
+      },
+      "Identifier": "3a4bdc1b-925a-4964-9a1b-29d31d06794b",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "7758a4c1-68d0-4112-a911-6ba6384ce886",
+        "Errors": [
+          {
+            "NextAction": "05e889e8-3f93-41c1-8504-f5b8e6d35d80",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "CustomerQueue": "arn:aws:connect:us-east-1:<ID_DA_CONTA>:instance/<ID_DA_INSTANCIA>/contact-flow/<ID_FLUXO_DC_Voz_Fila_Espera>"
+        }
+      },
+      "Identifier": "c2611828-886c-400f-9224-4f5d5b9af499",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "2d0db328-c915-40e6-a514-da8320edf065",
+        "Errors": [
+          {
+            "NextAction": "05e889e8-3f93-41c1-8504-f5b8e6d35d80",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "CustomerRemaining": "arn:aws:connect:us-east-1:<ID_DA_CONTA>:instance/<ID_DA_INSTANCIA>/contact-flow/<ID_FLUXO_DC_Voz_Pesquisa>"
+        }
+      },
+      "Identifier": "7758a4c1-68d0-4112-a911-6ba6384ce886",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "c2611828-886c-400f-9224-4f5d5b9af499",
+        "Errors": [
+          {
+            "NextAction": "c2611828-886c-400f-9224-4f5d5b9af499",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}

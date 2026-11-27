@@ -1,0 +1,346 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "e7dcf20e-74fc-48ce-9d99-476845f5e852",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 40,
+      "y": 40
+    },
+    "ActionMetadata": {
+      "e7dcf20e-74fc-48ce-9d99-476845f5e852": {
+        "position": {
+          "x": 280,
+          "y": 0
+        },
+        "children": [
+          "47967229-5c97-4eba-87c5-5df5ff704c55"
+        ],
+        "parameters": {
+          "TextToSpeechVoice": {
+            "languageCode": "pt-BR"
+          },
+          "TextToSpeechEngine": {
+            "voiceProvider": "connect:agentic"
+          }
+        },
+        "overrideConsoleVoice": true,
+        "fragments": {
+          "SetContactData": "47967229-5c97-4eba-87c5-5df5ff704c55"
+        },
+        "overrideLanguageAttribute": true
+      },
+      "47967229-5c97-4eba-87c5-5df5ff704c55": {
+        "position": {
+          "x": 280,
+          "y": 0
+        },
+        "dynamicParams": []
+      },
+      "Guarda nota": {
+        "position": {
+          "x": 560,
+          "y": 0
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "Attributes": {
+            "nota_csat": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicParams": [
+          "nota_csat"
+        ]
+      },
+      "7ad156ac-7e31-4a2a-86b1-ff0526aad433": {
+        "position": {
+          "x": 840,
+          "y": 0
+        }
+      },
+      "71572662-9652-48a0-9a78-fbc9c894a0a3": {
+        "position": {
+          "x": 840,
+          "y": 260
+        }
+      },
+      "Sem resposta": {
+        "position": {
+          "x": 1120,
+          "y": 260
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "c657d1a5-af79-4af4-b4bb-98805f275f90": {
+        "position": {
+          "x": 840,
+          "y": 520
+        }
+      },
+      "8a27f1f1-9e9b-4a3f-9d0a-1a782f781a1a": {
+        "position": {
+          "x": 1400,
+          "y": 260
+        }
+      },
+      "3adad4aa-bcf6-4afc-8602-70fbee185dd0": {
+        "position": {
+          "x": 560,
+          "y": 260
+        },
+        "conditionMetadata": [
+          {
+            "id": "f2ec92ec-e98d-411b-9639-72248ead053f",
+            "value": "1"
+          },
+          {
+            "id": "5c08a51c-d2a9-446e-b13f-3153fffe0310",
+            "value": "2"
+          },
+          {
+            "id": "6b91ca17-f0f5-4947-94b4-57622d2e1a05",
+            "value": "3"
+          },
+          {
+            "id": "67a23075-9fc3-4ac1-af46-707f140cb23f",
+            "value": "4"
+          },
+          {
+            "id": "ed13ee04-1d4b-43a1-b063-d54ce37f50e6",
+            "value": "5"
+          }
+        ]
+      }
+    },
+    "Annotations": [],
+    "name": "DC_Voz_Pesquisa",
+    "description": "",
+    "type": "contactFlow",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "TextToSpeechVoice": "LARISSA",
+        "TextToSpeechEngine": "connect:agentic"
+      },
+      "Identifier": "e7dcf20e-74fc-48ce-9d99-476845f5e852",
+      "Type": "UpdateContactTextToSpeechVoice",
+      "Transitions": {
+        "NextAction": "47967229-5c97-4eba-87c5-5df5ff704c55",
+        "Errors": [
+          {
+            "NextAction": "8a27f1f1-9e9b-4a3f-9d0a-1a782f781a1a",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LanguageCode": "pt-BR"
+      },
+      "Identifier": "47967229-5c97-4eba-87c5-5df5ff704c55",
+      "Type": "UpdateContactData",
+      "Transitions": {
+        "NextAction": "3adad4aa-bcf6-4afc-8602-70fbee185dd0",
+        "Errors": [
+          {
+            "NextAction": "8a27f1f1-9e9b-4a3f-9d0a-1a782f781a1a",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "nota_csat": "$.StoredCustomerInput"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "Guarda nota",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "7ad156ac-7e31-4a2a-86b1-ff0526aad433",
+        "Errors": [
+          {
+            "NextAction": "7ad156ac-7e31-4a2a-86b1-ff0526aad433",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Obrigado pela sua avaliação. Até logo!"
+      },
+      "Identifier": "7ad156ac-7e31-4a2a-86b1-ff0526aad433",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "8a27f1f1-9e9b-4a3f-9d0a-1a782f781a1a",
+        "Errors": [
+          {
+            "NextAction": "8a27f1f1-9e9b-4a3f-9d0a-1a782f781a1a",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Não consegui entender a sua resposta. Vamos tentar mais uma vez."
+      },
+      "Identifier": "71572662-9652-48a0-9a78-fbc9c894a0a3",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "3adad4aa-bcf6-4afc-8602-70fbee185dd0",
+        "Errors": [
+          {
+            "NextAction": "3adad4aa-bcf6-4afc-8602-70fbee185dd0",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "nota_csat": "SEm resposta"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "Sem resposta",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "8a27f1f1-9e9b-4a3f-9d0a-1a782f781a1a",
+        "Errors": [
+          {
+            "NextAction": "8a27f1f1-9e9b-4a3f-9d0a-1a782f781a1a",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "1"
+      },
+      "Identifier": "c657d1a5-af79-4af4-b4bb-98805f275f90",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "Sem resposta",
+        "Conditions": [
+          {
+            "NextAction": "71572662-9652-48a0-9a78-fbc9c894a0a3",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "Sem resposta",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "Sem resposta",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "8a27f1f1-9e9b-4a3f-9d0a-1a782f781a1a",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "5",
+        "Text": "Para avaliar o atendimento que você recebeu, digite uma nota de 1 a 5, sendo 1 muito insatisfeito e 5 muito satisfeito."
+      },
+      "Identifier": "3adad4aa-bcf6-4afc-8602-70fbee185dd0",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "c657d1a5-af79-4af4-b4bb-98805f275f90",
+        "Conditions": [
+          {
+            "NextAction": "Guarda nota",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          },
+          {
+            "NextAction": "Guarda nota",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2"
+              ]
+            }
+          },
+          {
+            "NextAction": "Guarda nota",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "3"
+              ]
+            }
+          },
+          {
+            "NextAction": "Guarda nota",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "4"
+              ]
+            }
+          },
+          {
+            "NextAction": "Guarda nota",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "5"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "c657d1a5-af79-4af4-b4bb-98805f275f90",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "c657d1a5-af79-4af4-b4bb-98805f275f90",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "c657d1a5-af79-4af4-b4bb-98805f275f90",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,369 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "e0dab6e7-f26e-46d1-9899-86c62a135502",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": -260,
+      "y": 200
+    },
+    "ActionMetadata": {
+      "e0dab6e7-f26e-46d1-9899-86c62a135502": {
+        "position": {
+          "x": 0,
+          "y": 260
+        }
+      },
+      "fccc5df0-59c0-4c56-8f8b-9e44056479b5": {
+        "position": {
+          "x": 1120,
+          "y": 0
+        },
+        "dynamicParams": []
+      },
+      "b97070b7-8faf-41a6-a5c0-7cd2c18bb6bb": {
+        "position": {
+          "x": 1680,
+          "y": 260
+        }
+      },
+      "2c704bb8-9dc5-4bf3-b30b-fbd2e2880a33": {
+        "position": {
+          "x": 840,
+          "y": 0
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "07d85785-bcfd-458b-aa7d-d873581764bf",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "1"
+          },
+          {
+            "id": "e9fa614a-048f-4e1b-9eef-e5d8ecf2cb4c",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "2"
+          },
+          {
+            "id": "73a216c7-bddd-48f4-bb68-6d3db0882e94",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "3"
+          },
+          {
+            "id": "efad3184-5a23-4f3e-8638-8d85f359bceb",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "4"
+          },
+          {
+            "id": "d6473abe-ea47-44ab-bc9b-9f9c6e60ed9f",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "5"
+          }
+        ]
+      },
+      "270814e4-0ea3-47be-bd39-cfc78be198f6": {
+        "position": {
+          "x": 1120,
+          "y": 260
+        }
+      },
+      "cb737a14-20a1-4fde-9665-a24334a8e4c2": {
+        "position": {
+          "x": 1400,
+          "y": 260
+        }
+      },
+      "51e9ec9c-43cd-4d9f-b13c-4d6703857362": {
+        "position": {
+          "x": 280,
+          "y": 260
+        },
+        "parameters": {
+          "LexV2Bot": {
+            "AliasArn": {}
+          }
+        },
+        "lexV2BotName": "",
+        "conditionMetadata": [
+          {
+            "id": "f8950743-cb6b-408f-bb0a-c1560d5e1bf3",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "AvaliarAtendimento"
+          }
+        ]
+      },
+      "c723ac09-1ad8-46c5-83a2-59d23d07cd46": {
+        "position": {
+          "x": 840,
+          "y": 520
+        }
+      },
+      "22c0310b-225f-4126-a870-553d62adb346": {
+        "position": {
+          "x": 1120,
+          "y": 520
+        },
+        "dynamicParams": []
+      }
+    },
+    "Annotations": [],
+    "name": "DC_Chat_Pesquisa",
+    "description": "",
+    "type": "contactFlow",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Obrigada pelo contato! Antes de encerrar, uma pergunta rápida para melhorarmos o nosso atendimento."
+      },
+      "Identifier": "e0dab6e7-f26e-46d1-9899-86c62a135502",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "51e9ec9c-43cd-4d9f-b13c-4d6703857362",
+        "Errors": [
+          {
+            "NextAction": "51e9ec9c-43cd-4d9f-b13c-4d6703857362",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "nota_pesquisa_chat": "$.Lex.Slots.nota"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "fccc5df0-59c0-4c56-8f8b-9e44056479b5",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cb737a14-20a1-4fde-9665-a24334a8e4c2",
+        "Errors": [
+          {
+            "NextAction": "cb737a14-20a1-4fde-9665-a24334a8e4c2",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "b97070b7-8faf-41a6-a5c0-7cd2c18bb6bb",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Lex.Slots.nota"
+      },
+      "Identifier": "2c704bb8-9dc5-4bf3-b30b-fbd2e2880a33",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "c723ac09-1ad8-46c5-83a2-59d23d07cd46",
+        "Conditions": [
+          {
+            "NextAction": "fccc5df0-59c0-4c56-8f8b-9e44056479b5",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          },
+          {
+            "NextAction": "fccc5df0-59c0-4c56-8f8b-9e44056479b5",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2"
+              ]
+            }
+          },
+          {
+            "NextAction": "fccc5df0-59c0-4c56-8f8b-9e44056479b5",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "3"
+              ]
+            }
+          },
+          {
+            "NextAction": "fccc5df0-59c0-4c56-8f8b-9e44056479b5",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "4"
+              ]
+            }
+          },
+          {
+            "NextAction": "fccc5df0-59c0-4c56-8f8b-9e44056479b5",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "5"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "c723ac09-1ad8-46c5-83a2-59d23d07cd46",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Não consegui entender a nota. Digite um número de 1 a 5."
+      },
+      "Identifier": "270814e4-0ea3-47be-bd39-cfc78be198f6",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "51e9ec9c-43cd-4d9f-b13c-4d6703857362",
+        "Errors": [
+          {
+            "NextAction": "51e9ec9c-43cd-4d9f-b13c-4d6703857362",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Obrigada pela sua avaliação! Até logo."
+      },
+      "Identifier": "cb737a14-20a1-4fde-9665-a24334a8e4c2",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "b97070b7-8faf-41a6-a5c0-7cd2c18bb6bb",
+        "Errors": [
+          {
+            "NextAction": "b97070b7-8faf-41a6-a5c0-7cd2c18bb6bb",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "De 1 a 5, qual nota você dá para o atendimento? (1 = muito ruim, 5 = muito bom)",
+        "LexV2Bot": {
+          "AliasArn": "arn:aws:lex:us-east-1:<ID_DA_CONTA>:bot-alias/<ID_DO_BOT>/<ID_DO_ALIAS>"
+        }
+      },
+      "Identifier": "51e9ec9c-43cd-4d9f-b13c-4d6703857362",
+      "Type": "ConnectParticipantWithLexBot",
+      "Transitions": {
+        "NextAction": "22c0310b-225f-4126-a870-553d62adb346",
+        "Conditions": [
+          {
+            "NextAction": "2c704bb8-9dc5-4bf3-b30b-fbd2e2880a33",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "AvaliarAtendimento"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "c723ac09-1ad8-46c5-83a2-59d23d07cd46",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "22c0310b-225f-4126-a870-553d62adb346",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "1"
+      },
+      "Identifier": "c723ac09-1ad8-46c5-83a2-59d23d07cd46",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "22c0310b-225f-4126-a870-553d62adb346",
+        "Conditions": [
+          {
+            "NextAction": "270814e4-0ea3-47be-bd39-cfc78be198f6",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "22c0310b-225f-4126-a870-553d62adb346",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "22c0310b-225f-4126-a870-553d62adb346",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "nota_pesquisa_chat": "sem resposta"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "22c0310b-225f-4126-a870-553d62adb346",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "cb737a14-20a1-4fde-9665-a24334a8e4c2",
+        "Errors": [
+          {
+            "NextAction": "cb737a14-20a1-4fde-9665-a24334a8e4c2",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,530 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "efc0eb09-1d0e-40b7-b9a4-849d295831ea",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": -127.2,
+      "y": 0.8
+    },
+    "ActionMetadata": {
+      "efc0eb09-1d0e-40b7-b9a4-849d295831ea": {
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "children": [
+          "ca68f324-1a44-4ea7-be72-c26386df91e8"
+        ],
+        "parameters": {
+          "TextToSpeechVoice": {
+            "languageCode": "pt-BR"
+          },
+          "TextToSpeechEngine": {
+            "voiceProvider": "connect:agentic"
+          }
+        },
+        "overrideConsoleVoice": true,
+        "fragments": {
+          "SetContactData": "ca68f324-1a44-4ea7-be72-c26386df91e8"
+        },
+        "overrideLanguageAttribute": true
+      },
+      "ca68f324-1a44-4ea7-be72-c26386df91e8": {
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "dynamicParams": []
+      },
+      "e24d6e38-3688-4e43-9680-433b3b5d46ff": {
+        "position": {
+          "x": 1400,
+          "y": 260
+        }
+      },
+      "88a6e0a6-1746-47e9-a28c-d91d98cc9168": {
+        "position": {
+          "x": 1120,
+          "y": 260
+        }
+      },
+      "165ad4f3-0020-4646-9d27-63a81ee64b66": {
+        "position": {
+          "x": 560,
+          "y": 0
+        }
+      },
+      "b8b40cec-873d-449f-9291-694311646b66": {
+        "position": {
+          "x": 280,
+          "y": 0
+        },
+        "parameters": {
+          "Messages": [
+            {
+              "PromptId": {
+                "displayName": "Music_Jazz_MyTimetoFly_Inst.wav"
+              }
+            }
+          ],
+          "InterruptFrequencySeconds": {
+            "unit": 60
+          }
+        },
+        "audio": [
+          {
+            "id": "arn:aws:connect:us-east-1:<ID_DA_CONTA>:instance/<ID_DA_INSTANCIA>/prompt/<ID_PROMPT_MUSICA>",
+            "text": "Music_Jazz_MyTimetoFly_Inst.wav",
+            "type": "Prompt"
+          }
+        ],
+        "timeoutUnit": {
+          "value": "min"
+        }
+      },
+      "63a67044-d9a6-49c3-87c8-16f996921414": {
+        "position": {
+          "x": 840,
+          "y": 260
+        }
+      },
+      "d1579c52-5831-4a86-82c6-7817829a1f20": {
+        "position": {
+          "x": 1120,
+          "y": 520
+        }
+      },
+      "78fb7cf5-fe6c-4f67-a251-cfc894046461": {
+        "position": {
+          "x": 1400,
+          "y": 780
+        }
+      },
+      "b6a73ba3-89f2-4471-aac5-3bf56ae3552c": {
+        "position": {
+          "x": 560,
+          "y": 260
+        }
+      },
+      "27678e72-eb56-4bda-be2e-c783a1a988ca": {
+        "position": {
+          "x": 280,
+          "y": 260
+        }
+      },
+      "a63d93bf-f740-41ef-85de-7d59f5b14a5f": {
+        "position": {
+          "x": 1400,
+          "y": 520
+        }
+      },
+      "71a4498c-ee25-492d-aa74-8b746bfdeae0": {
+        "position": {
+          "x": 840,
+          "y": 520
+        }
+      },
+      "6dce0bd8-9971-4f1a-8040-3018f8f43f13": {
+        "position": {
+          "x": 840,
+          "y": 0
+        }
+      },
+      "c5553aa6-bcd5-476c-9107-478421d1dc46": {
+        "position": {
+          "x": 562.4,
+          "y": 510.4
+        },
+        "conditionMetadata": [
+          {
+            "id": "3e5c3af4-9603-43dc-aa44-27935a8cdbf9",
+            "value": "1"
+          },
+          {
+            "id": "f70e2d7d-eea6-47b6-b7b1-f7777b14606d",
+            "value": "2"
+          }
+        ]
+      },
+      "598b0940-2338-4035-90e4-40778833994d": {
+        "position": {
+          "x": 840,
+          "y": 780
+        },
+        "parameters": {
+          "InputValidation": {
+            "PhoneNumberValidation": {
+              "CountryCode": {
+                "displayName": "Brazil"
+              }
+            }
+          }
+        },
+        "conditionMetadata": [],
+        "countryCodePrefix": "+55"
+      }
+    },
+    "Annotations": [],
+    "name": "DC_Voz_Fila_Espera",
+    "description": "",
+    "type": "customerQueue",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "TextToSpeechVoice": "LARISSA",
+        "TextToSpeechEngine": "connect:agentic"
+      },
+      "Identifier": "efc0eb09-1d0e-40b7-b9a4-849d295831ea",
+      "Type": "UpdateContactTextToSpeechVoice",
+      "Transitions": {
+        "NextAction": "ca68f324-1a44-4ea7-be72-c26386df91e8",
+        "Errors": [
+          {
+            "NextAction": "e24d6e38-3688-4e43-9680-433b3b5d46ff",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LanguageCode": "pt-BR"
+      },
+      "Identifier": "ca68f324-1a44-4ea7-be72-c26386df91e8",
+      "Type": "UpdateContactData",
+      "Transitions": {
+        "NextAction": "b8b40cec-873d-449f-9291-694311646b66",
+        "Errors": [
+          {
+            "NextAction": "e24d6e38-3688-4e43-9680-433b3b5d46ff",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "e24d6e38-3688-4e43-9680-433b3b5d46ff",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Recebemos o seu pedido. Ligaremos para você assim que um atendente estiver disponível. Obrigado!"
+      },
+      "Identifier": "88a6e0a6-1746-47e9-a28c-d91d98cc9168",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "e24d6e38-3688-4e43-9680-433b3b5d46ff",
+        "Errors": [
+          {
+            "NextAction": "e24d6e38-3688-4e43-9680-433b3b5d46ff",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Todos os nossos atendentes estão ocupados no momento. Sua ligação será atendida em breve. Por favor, aguarde na linha."
+      },
+      "Identifier": "165ad4f3-0020-4646-9d27-63a81ee64b66",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "6dce0bd8-9971-4f1a-8040-3018f8f43f13",
+        "Errors": [
+          {
+            "NextAction": "6dce0bd8-9971-4f1a-8040-3018f8f43f13",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Messages": [
+          {
+            "PromptId": "arn:aws:connect:us-east-1:<ID_DA_CONTA>:instance/<ID_DA_INSTANCIA>/prompt/<ID_PROMPT_MUSICA>"
+          }
+        ],
+        "InterruptFrequencySeconds": "60",
+        "ContinueMessagingDuringInterrupt": "false"
+      },
+      "Identifier": "b8b40cec-873d-449f-9291-694311646b66",
+      "Type": "MessageParticipantIteratively",
+      "Transitions": {
+        "NextAction": "6dce0bd8-9971-4f1a-8040-3018f8f43f13",
+        "Conditions": [
+          {
+            "NextAction": "27678e72-eb56-4bda-be2e-c783a1a988ca",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "MessagesInterrupted"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "6dce0bd8-9971-4f1a-8040-3018f8f43f13",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "RetryDelaySeconds": "300",
+        "InitialCallDelaySeconds": "0",
+        "MaximumConnectionAttempts": "2",
+        "CallbackMode": "AgentFirst"
+      },
+      "Identifier": "63a67044-d9a6-49c3-87c8-16f996921414",
+      "Type": "CreateCallbackContact",
+      "Transitions": {
+        "NextAction": "88a6e0a6-1746-47e9-a28c-d91d98cc9168",
+        "Errors": [
+          {
+            "NextAction": "6dce0bd8-9971-4f1a-8040-3018f8f43f13",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "1"
+      },
+      "Identifier": "d1579c52-5831-4a86-82c6-7817829a1f20",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "78fb7cf5-fe6c-4f67-a251-cfc894046461",
+        "Conditions": [
+          {
+            "NextAction": "a63d93bf-f740-41ef-85de-7d59f5b14a5f",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "78fb7cf5-fe6c-4f67-a251-cfc894046461",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "6dce0bd8-9971-4f1a-8040-3018f8f43f13",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Não foi possível usar esse número. Iremos manter você na mesma posição da fila de espera."
+      },
+      "Identifier": "78fb7cf5-fe6c-4f67-a251-cfc894046461",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "6dce0bd8-9971-4f1a-8040-3018f8f43f13",
+        "Errors": [
+          {
+            "NextAction": "6dce0bd8-9971-4f1a-8040-3018f8f43f13",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "CallbackNumber": "$.CallbackNumber"
+      },
+      "Identifier": "b6a73ba3-89f2-4471-aac5-3bf56ae3552c",
+      "Type": "UpdateContactCallbackNumber",
+      "Transitions": {
+        "NextAction": "63a67044-d9a6-49c3-87c8-16f996921414",
+        "Errors": [
+          {
+            "NextAction": "6dce0bd8-9971-4f1a-8040-3018f8f43f13",
+            "ErrorType": "InvalidCallbackNumber"
+          },
+          {
+            "NextAction": "6dce0bd8-9971-4f1a-8040-3018f8f43f13",
+            "ErrorType": "CallbackNumberNotDialable"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "1"
+      },
+      "Identifier": "27678e72-eb56-4bda-be2e-c783a1a988ca",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "c5553aa6-bcd5-476c-9107-478421d1dc46",
+        "Conditions": [
+          {
+            "NextAction": "165ad4f3-0020-4646-9d27-63a81ee64b66",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "c5553aa6-bcd5-476c-9107-478421d1dc46",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "6dce0bd8-9971-4f1a-8040-3018f8f43f13",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Esse número não é válido. Vamos tentar mais uma vez. Por favor, digite o número do telefone para o qual deseja retorno. São 11 números: o DDD e mais nove números do telefone. Quando terminar, aperte a tecla jogo da velha."
+      },
+      "Identifier": "a63d93bf-f740-41ef-85de-7d59f5b14a5f",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "598b0940-2338-4035-90e4-40778833994d",
+        "Errors": [
+          {
+            "NextAction": "598b0940-2338-4035-90e4-40778833994d",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "CallbackNumber": "$.StoredCustomerInput"
+      },
+      "Identifier": "71a4498c-ee25-492d-aa74-8b746bfdeae0",
+      "Type": "UpdateContactCallbackNumber",
+      "Transitions": {
+        "NextAction": "63a67044-d9a6-49c3-87c8-16f996921414",
+        "Errors": [
+          {
+            "NextAction": "d1579c52-5831-4a86-82c6-7817829a1f20",
+            "ErrorType": "InvalidCallbackNumber"
+          },
+          {
+            "NextAction": "d1579c52-5831-4a86-82c6-7817829a1f20",
+            "ErrorType": "CallbackNumberNotDialable"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "6dce0bd8-9971-4f1a-8040-3018f8f43f13",
+      "Type": "EndFlowExecution",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "8",
+        "Text": "Todos os nossos atendentes continuam ocupados. Para receber uma ligação de retorno neste número e manter o seu lugar na fila, digite 1. Para informar outro número, digite 2 ou aguarde na linha para atendimento."
+      },
+      "Identifier": "c5553aa6-bcd5-476c-9107-478421d1dc46",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "6dce0bd8-9971-4f1a-8040-3018f8f43f13",
+        "Conditions": [
+          {
+            "NextAction": "b6a73ba3-89f2-4471-aac5-3bf56ae3552c",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          },
+          {
+            "NextAction": "598b0940-2338-4035-90e4-40778833994d",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "6dce0bd8-9971-4f1a-8040-3018f8f43f13",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "6dce0bd8-9971-4f1a-8040-3018f8f43f13",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "6dce0bd8-9971-4f1a-8040-3018f8f43f13",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "True",
+        "InputTimeLimitSeconds": "5",
+        "Text": "Por favor, digite o número do telefone para o qual deseja retorno. São 11 números: o DDD e mais nove números do telefone. Quando terminar, aperte a tecla jogo da velha.",
+        "DTMFConfiguration": {
+          "InterdigitTimeLimitSeconds": "5"
+        },
+        "InputValidation": {
+          "PhoneNumberValidation": {
+            "NumberFormat": "Local",
+            "CountryCode": "BR"
+          }
+        }
+      },
+      "Identifier": "598b0940-2338-4035-90e4-40778833994d",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "71a4498c-ee25-492d-aa74-8b746bfdeae0",
+        "Errors": [
+          {
+            "NextAction": "6dce0bd8-9971-4f1a-8040-3018f8f43f13",
+            "ErrorType": "NoMatchingError"
+          },
+          {
+            "NextAction": "71a4498c-ee25-492d-aa74-8b746bfdeae0",
+            "ErrorType": "InvalidPhoneNumber"
+          }
+        ]
+      }
+    }
+  ]
+}

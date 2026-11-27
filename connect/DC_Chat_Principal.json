@@ -1,0 +1,1448 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "950559b6-9a6d-47dd-bd6c-5e5e98e58eaf",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": -401.6,
+      "y": 260.8
+    },
+    "ActionMetadata": {
+      "950559b6-9a6d-47dd-bd6c-5e5e98e58eaf": {
+        "position": {
+          "x": -280,
+          "y": 260
+        },
+        "children": [
+          "549ec0c7-848a-41b1-9862-fd04a05c350c"
+        ],
+        "parameters": {
+          "TextToSpeechVoice": {
+            "languageCode": "pt-BR"
+          },
+          "TextToSpeechEngine": {
+            "voiceProvider": "connect:agentic"
+          }
+        },
+        "overrideConsoleVoice": true,
+        "fragments": {
+          "SetContactData": "549ec0c7-848a-41b1-9862-fd04a05c350c"
+        },
+        "overrideLanguageAttribute": true
+      },
+      "549ec0c7-848a-41b1-9862-fd04a05c350c": {
+        "position": {
+          "x": -280,
+          "y": 260
+        },
+        "dynamicParams": []
+      },
+      "fbb1903f-d0ee-45d4-81c5-398f20d06c83": {
+        "position": {
+          "x": 3080,
+          "y": -260
+        },
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "arn:aws:lambda:us-east-1:<ID_DA_CONTA>:function:enviarBoleto"
+          }
+        },
+        "dynamicMetadata": {
+          "cpf": false
+        }
+      },
+      "040e3ed2-b621-4c33-af6f-33856cb344f4": {
+        "position": {
+          "x": 3360,
+          "y": -260
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "73981bbf-1422-4ea4-9657-51ee1fa05fb4",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "true"
+          }
+        ]
+      },
+      "e420924c-fea8-4a51-94c1-d74490adae8c": {
+        "position": {
+          "x": 2800,
+          "y": -260
+        }
+      },
+      "64a87a07-3837-465a-a2ac-0806806b4af5": {
+        "position": {
+          "x": 3920,
+          "y": -260
+        }
+      },
+      "0aadfcc2-fd92-4821-b1ed-15026b074c31": {
+        "position": {
+          "x": 3920,
+          "y": 0
+        }
+      },
+      "e1a7a6ea-c11b-4b30-84b9-7f119f502d8c": {
+        "position": {
+          "x": 1400,
+          "y": 0
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "9bc7f92b-90d4-4f1b-b890-146dbafc2a3b",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "true"
+          }
+        ]
+      },
+      "5e251a54-89b3-4640-a68e-4c0d0669cc01": {
+        "position": {
+          "x": 2520,
+          "y": 0
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "95ffd59a-9042-4dbf-9ec5-fd83af092055",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "SegundaViaBoleto"
+          }
+        ]
+      },
+      "b29b7cc8-16c5-420f-a610-8d5b34daaf74": {
+        "position": {
+          "x": 0,
+          "y": 260
+        }
+      },
+      "697cb77d-64ec-4ea1-9c9c-b9fbf1cfe72b": {
+        "position": {
+          "x": 1120,
+          "y": 520
+        }
+      },
+      "9f097278-93a0-41dc-806f-b989e1184758": {
+        "position": {
+          "x": 1120,
+          "y": 0
+        },
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "arn:aws:lambda:us-east-1:<ID_DA_CONTA>:function:buscarCliente"
+          }
+        },
+        "dynamicMetadata": {
+          "cpf": false
+        }
+      },
+      "2d10a09f-23ca-48f5-ab37-b1eef59cb42e": {
+        "position": {
+          "x": 1680,
+          "y": 0
+        },
+        "dynamicParams": []
+      },
+      "0e51a7bd-e77a-4171-a951-3e00236f4237": {
+        "position": {
+          "x": 1960,
+          "y": 0
+        }
+      },
+      "abb29bf7-e623-4769-b6bc-81ea6e4f2f7c": {
+        "position": {
+          "x": 1680,
+          "y": 260
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "f47c00f5-f0ca-4b1b-8545-aaf93f449b62",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "true"
+          }
+        ]
+      },
+      "57e620fb-67b6-4bc5-89b5-baf36516ed63": {
+        "position": {
+          "x": 1960,
+          "y": 260
+        }
+      },
+      "2f64732a-d562-4c44-958f-5ea4d645f68b": {
+        "position": {
+          "x": 2520,
+          "y": 260
+        }
+      },
+      "dbb30937-02f6-477b-8515-5fa18e81b2ed": {
+        "position": {
+          "x": 2800,
+          "y": 260
+        }
+      },
+      "0c126b2a-4c57-4930-92d2-a7282c6986d5": {
+        "position": {
+          "x": 3080,
+          "y": 260
+        },
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "arn:aws:lambda:us-east-1:<ID_DA_CONTA>:function:consultarExtrato"
+          }
+        },
+        "dynamicMetadata": {
+          "cpf": false
+        }
+      },
+      "29983a1c-3c45-443f-85b9-09c77ea36f7d": {
+        "position": {
+          "x": 3360,
+          "y": 260
+        }
+      },
+      "b2a6401b-a19b-4709-8b16-503403fa9a61": {
+        "position": {
+          "x": 3360,
+          "y": 520
+        }
+      },
+      "33f0777a-9a48-4182-9941-3d2a6ebebcf6": {
+        "position": {
+          "x": 1400,
+          "y": 520
+        }
+      },
+      "337ebb6c-3ea4-46a9-a49d-f968da4d1b20": {
+        "position": {
+          "x": 2520,
+          "y": 520
+        }
+      },
+      "888f0469-bf61-4def-9f78-2d21a616695e": {
+        "position": {
+          "x": 1960,
+          "y": 780
+        }
+      },
+      "fa434a55-eb2b-4dd9-af77-9700ec546f55": {
+        "position": {
+          "x": 840,
+          "y": 0
+        }
+      },
+      "ee0aeb85-28a1-440e-8abd-9d5f846bdfa4": {
+        "position": {
+          "x": 840,
+          "y": 520
+        }
+      },
+      "8ce196f3-3241-44a8-8c0f-83d27e4c8a52": {
+        "position": {
+          "x": 1120,
+          "y": -260
+        }
+      },
+      "f9829d1b-5bd1-4b7a-a192-0178780655b3": {
+        "position": {
+          "x": 1680,
+          "y": 780
+        }
+      },
+      "2931f4c9-36fa-41c5-9e7f-6734b69e5c29": {
+        "position": {
+          "x": 1960,
+          "y": 1040
+        }
+      },
+      "4ff58548-de0e-45ac-8db1-65ab06dfecb4": {
+        "position": {
+          "x": 2800,
+          "y": 520
+        },
+        "parameters": {
+          "LexV2Bot": {
+            "AliasArn": {}
+          }
+        },
+        "lexV2BotName": "",
+        "conditionMetadata": [
+          {
+            "id": "3e0ea637-f074-4f13-9898-fa83660e1a2e",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "SegundaViaBoleto"
+          },
+          {
+            "id": "12a3c667-8361-4f7c-a6c6-8b5c66b401e9",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "ConsultarExtrato"
+          },
+          {
+            "id": "da642579-530a-4ca6-a78a-8c028fec661b",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "FalarComAtendente"
+          },
+          {
+            "id": "5bd453e7-a8b4-4ca0-bb7d-549206e10ee3",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "EncerrarConversa"
+          },
+          {
+            "id": "0fa53842-25c5-422e-b7d2-8d729f1b75a9",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "FallbackIntent"
+          }
+        ]
+      },
+      "3aa2f769-9894-4858-a9c6-94065f05284f": {
+        "position": {
+          "x": 280,
+          "y": 260
+        },
+        "parameters": {
+          "LexV2Bot": {
+            "AliasArn": {}
+          }
+        },
+        "lexV2BotName": "",
+        "conditionMetadata": [
+          {
+            "id": "bc6e1a8b-8726-44d8-a45b-630089690094",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "SegundaViaBoleto"
+          },
+          {
+            "id": "9d8eaa2f-5a46-436d-95d2-651411a96d1e",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "ConsultarExtrato"
+          },
+          {
+            "id": "eb5dc270-eafb-4d54-9a04-ac6a3410a371",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "FalarComAtendente"
+          },
+          {
+            "id": "fcd9faaf-a2f0-40ae-ae5f-41c96ea2a38a",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "EncerrarConversa"
+          },
+          {
+            "id": "2e765c1d-be19-4250-a734-86f468196be8",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "FallbackIntent"
+          }
+        ]
+      },
+      "009a36d4-5ee1-4e69-8e3b-e44c2ff1994d": {
+        "position": {
+          "x": 2520,
+          "y": 780
+        }
+      },
+      "7e04579a-06a6-4ace-a76b-147c56d0c333": {
+        "position": {
+          "x": 840,
+          "y": 1300
+        }
+      },
+      "e005cc7b-3ee4-4a62-ab93-0e0349d17d7f": {
+        "position": {
+          "x": 840,
+          "y": 780
+        }
+      },
+      "10feab25-2a97-444a-8410-1575a422b55a": {
+        "position": {
+          "x": 1400,
+          "y": 1040
+        },
+        "parameters": {
+          "LexV2Bot": {
+            "AliasArn": {}
+          }
+        },
+        "lexV2BotName": "",
+        "conditionMetadata": [
+          {
+            "id": "9279eb91-805a-4c09-ab2e-ab42e6f6b447",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "SegundaViaBoleto"
+          },
+          {
+            "id": "6ed5624d-7e36-4700-98b0-3fd49a696e4e",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "ConsultarExtrato"
+          },
+          {
+            "id": "7296bd07-b4ca-48e8-8faf-83bb6f0388a1",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "FalarComAtendente"
+          },
+          {
+            "id": "cc3a76ed-dcbb-44b0-bc23-440a24e85e77",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "EncerrarConversa"
+          },
+          {
+            "id": "f19fc7d6-07e9-4f64-88c3-7d6056be04d1",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "FallbackIntent"
+          }
+        ]
+      },
+      "423f2d0f-0c9e-47be-a4b3-e529d8cb5ccc": {
+        "position": {
+          "x": 1120,
+          "y": 1300
+        }
+      },
+      "deb9845d-5f96-42dd-8646-857c89f4bcce": {
+        "position": {
+          "x": 1120,
+          "y": 780
+        }
+      },
+      "51b5dc69-f301-4490-befa-178717a3921c": {
+        "position": {
+          "x": 1400,
+          "y": 780
+        }
+      },
+      "2aab41d8-8dc2-4323-b2e0-daf985fb3cf5": {
+        "position": {
+          "x": 1119.2,
+          "y": 1039.2
+        },
+        "parameters": {
+          "EventHooks": {
+            "CustomerRemaining": {
+              "useSetEventHook": true
+            }
+          }
+        },
+        "contactFlow": {
+          "id": "arn:aws:connect:us-east-1:<ID_DA_CONTA>:instance/<ID_DA_INSTANCIA>/contact-flow/<ID_FLUXO_DC_Chat_Pesquisa>"
+        }
+      }
+    },
+    "Annotations": [],
+    "name": "DC_Chat_Principal",
+    "description": "",
+    "type": "contactFlow",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "TextToSpeechVoice": "ANA_PAULA",
+        "TextToSpeechEngine": "connect:agentic"
+      },
+      "Identifier": "950559b6-9a6d-47dd-bd6c-5e5e98e58eaf",
+      "Type": "UpdateContactTextToSpeechVoice",
+      "Transitions": {
+        "NextAction": "549ec0c7-848a-41b1-9862-fd04a05c350c",
+        "Errors": [
+          {
+            "NextAction": "b29b7cc8-16c5-420f-a610-8d5b34daaf74",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LanguageCode": "pt-BR"
+      },
+      "Identifier": "549ec0c7-848a-41b1-9862-fd04a05c350c",
+      "Type": "UpdateContactData",
+      "Transitions": {
+        "NextAction": "b29b7cc8-16c5-420f-a610-8d5b34daaf74",
+        "Errors": [
+          {
+            "NextAction": "b29b7cc8-16c5-420f-a610-8d5b34daaf74",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:<ID_DA_CONTA>:function:enviarBoleto",
+        "InvocationTimeLimitSeconds": "8",
+        "InvocationType": "SYNCHRONOUS",
+        "LambdaInvocationAttributes": {
+          "cpf": "$.Attributes.cpf"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "fbb1903f-d0ee-45d4-81c5-398f20d06c83",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "040e3ed2-b621-4c33-af6f-33856cb344f4",
+        "Errors": [
+          {
+            "NextAction": "0aadfcc2-fd92-4821-b1ed-15026b074c31",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.External.enviado"
+      },
+      "Identifier": "040e3ed2-b621-4c33-af6f-33856cb344f4",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "0aadfcc2-fd92-4821-b1ed-15026b074c31",
+        "Conditions": [
+          {
+            "NextAction": "64a87a07-3837-465a-a2ac-0806806b4af5",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "true"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "0aadfcc2-fd92-4821-b1ed-15026b074c31",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Estou gerando a segunda via do seu boleto. Em instantes você recebe no e-mail cadastrado."
+      },
+      "Identifier": "e420924c-fea8-4a51-94c1-d74490adae8c",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "fbb1903f-d0ee-45d4-81c5-398f20d06c83",
+        "Errors": [
+          {
+            "NextAction": "0aadfcc2-fd92-4821-b1ed-15026b074c31",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "$.External.frase"
+      },
+      "Identifier": "64a87a07-3837-465a-a2ac-0806806b4af5",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "3aa2f769-9894-4858-a9c6-94065f05284f",
+        "Errors": [
+          {
+            "NextAction": "0aadfcc2-fd92-4821-b1ed-15026b074c31",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Não foi possível enviar o boleto agora. Posso tentar outra coisa ou chamar um atendente."
+      },
+      "Identifier": "0aadfcc2-fd92-4821-b1ed-15026b074c31",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "3aa2f769-9894-4858-a9c6-94065f05284f",
+        "Errors": [
+          {
+            "NextAction": "3aa2f769-9894-4858-a9c6-94065f05284f",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.External.encontrado"
+      },
+      "Identifier": "e1a7a6ea-c11b-4b30-84b9-7f119f502d8c",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "abb29bf7-e623-4769-b6bc-81ea6e4f2f7c",
+        "Conditions": [
+          {
+            "NextAction": "2d10a09f-23ca-48f5-ab37-b1eef59cb42e",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "true"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "abb29bf7-e623-4769-b6bc-81ea6e4f2f7c",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Lex.IntentName"
+      },
+      "Identifier": "5e251a54-89b3-4640-a68e-4c0d0669cc01",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "dbb30937-02f6-477b-8515-5fa18e81b2ed",
+        "Conditions": [
+          {
+            "NextAction": "e420924c-fea8-4a51-94c1-d74490adae8c",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "SegundaViaBoleto"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "dbb30937-02f6-477b-8515-5fa18e81b2ed",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Olá! Você está falando com o assistente virtual da Aurora Financeira (demonstração). Esta conversa poderá ser registrada para fins de qualidade e segurança."
+      },
+      "Identifier": "b29b7cc8-16c5-420f-a610-8d5b34daaf74",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "3aa2f769-9894-4858-a9c6-94065f05284f",
+        "Errors": [
+          {
+            "NextAction": "8ce196f3-3241-44a8-8c0f-83d27e4c8a52",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Desculpe, não entendi."
+      },
+      "Identifier": "697cb77d-64ec-4ea1-9c9c-b9fbf1cfe72b",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "3aa2f769-9894-4858-a9c6-94065f05284f",
+        "Errors": [
+          {
+            "NextAction": "3aa2f769-9894-4858-a9c6-94065f05284f",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:<ID_DA_CONTA>:function:buscarCliente",
+        "InvocationTimeLimitSeconds": "8",
+        "InvocationType": "SYNCHRONOUS",
+        "LambdaInvocationAttributes": {
+          "cpf": "$.Lex.Slots.cpf"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "9f097278-93a0-41dc-806f-b989e1184758",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "e1a7a6ea-c11b-4b30-84b9-7f119f502d8c",
+        "Errors": [
+          {
+            "NextAction": "33f0777a-9a48-4182-9941-3d2a6ebebcf6",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "primeiro_nome": "$.External.primeiro_nome",
+          "nome": "$.External.nome",
+          "email": "$.External.email",
+          "cpf": "$.External.cpf",
+          "cpf_mascarado": "$.External.cpf_mascarado",
+          "pontos": "$.External.pontos"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "2d10a09f-23ca-48f5-ab37-b1eef59cb42e",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "0e51a7bd-e77a-4171-a951-3e00236f4237",
+        "Errors": [
+          {
+            "NextAction": "33f0777a-9a48-4182-9941-3d2a6ebebcf6",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Olá, $.Attributes.primeiro_nome! Encontrei o seu cadastro."
+      },
+      "Identifier": "0e51a7bd-e77a-4171-a951-3e00236f4237",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "5e251a54-89b3-4640-a68e-4c0d0669cc01",
+        "Errors": [
+          {
+            "NextAction": "33f0777a-9a48-4182-9941-3d2a6ebebcf6",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.External.erro"
+      },
+      "Identifier": "abb29bf7-e623-4769-b6bc-81ea6e4f2f7c",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "57e620fb-67b6-4bc5-89b5-baf36516ed63",
+        "Conditions": [
+          {
+            "NextAction": "33f0777a-9a48-4182-9941-3d2a6ebebcf6",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "true"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "57e620fb-67b6-4bc5-89b5-baf36516ed63",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "2"
+      },
+      "Identifier": "57e620fb-67b6-4bc5-89b5-baf36516ed63",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "337ebb6c-3ea4-46a9-a49d-f968da4d1b20",
+        "Conditions": [
+          {
+            "NextAction": "2f64732a-d562-4c44-958f-5ea4d645f68b",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "337ebb6c-3ea4-46a9-a49d-f968da4d1b20",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "337ebb6c-3ea4-46a9-a49d-f968da4d1b20",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Não encontrei esse CPF no cadastro. Confira os números e vamos tentar de novo."
+      },
+      "Identifier": "2f64732a-d562-4c44-958f-5ea4d645f68b",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "4ff58548-de0e-45ac-8db1-65ab06dfecb4",
+        "Errors": [
+          {
+            "NextAction": "4ff58548-de0e-45ac-8db1-65ab06dfecb4",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Estou consultando o extrato do seu financiamento."
+      },
+      "Identifier": "dbb30937-02f6-477b-8515-5fa18e81b2ed",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "0c126b2a-4c57-4930-92d2-a7282c6986d5",
+        "Errors": [
+          {
+            "NextAction": "b2a6401b-a19b-4709-8b16-503403fa9a61",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:<ID_DA_CONTA>:function:consultarExtrato",
+        "InvocationTimeLimitSeconds": "8",
+        "InvocationType": "SYNCHRONOUS",
+        "LambdaInvocationAttributes": {
+          "cpf": "$.Attributes.cpf"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "0c126b2a-4c57-4930-92d2-a7282c6986d5",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "29983a1c-3c45-443f-85b9-09c77ea36f7d",
+        "Errors": [
+          {
+            "NextAction": "b2a6401b-a19b-4709-8b16-503403fa9a61",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "$.External.frase"
+      },
+      "Identifier": "29983a1c-3c45-443f-85b9-09c77ea36f7d",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "3aa2f769-9894-4858-a9c6-94065f05284f",
+        "Errors": [
+          {
+            "NextAction": "b2a6401b-a19b-4709-8b16-503403fa9a61",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Não foi possível consultar o extrato agora. Posso tentar outra coisa ou chamar um atendente."
+      },
+      "Identifier": "b2a6401b-a19b-4709-8b16-503403fa9a61",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "3aa2f769-9894-4858-a9c6-94065f05284f",
+        "Errors": [
+          {
+            "NextAction": "3aa2f769-9894-4858-a9c6-94065f05284f",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Tive um problema ao consultar os seus dados. Vou chamar um atendente para ajudar."
+      },
+      "Identifier": "33f0777a-9a48-4182-9941-3d2a6ebebcf6",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "e005cc7b-3ee4-4a62-ab93-0e0349d17d7f",
+        "Errors": [
+          {
+            "NextAction": "e005cc7b-3ee4-4a62-ab93-0e0349d17d7f",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Não consegui localizar o seu cadastro. Vou chamar um atendente para ajudar."
+      },
+      "Identifier": "337ebb6c-3ea4-46a9-a49d-f968da4d1b20",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "e005cc7b-3ee4-4a62-ab93-0e0349d17d7f",
+        "Errors": [
+          {
+            "NextAction": "e005cc7b-3ee4-4a62-ab93-0e0349d17d7f",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "No momento todos os nossos atendentes estão ocupados. Enquanto isso, posso ajudar com boleto e extrato."
+      },
+      "Identifier": "888f0469-bf61-4def-9f78-2d21a616695e",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "3aa2f769-9894-4858-a9c6-94065f05284f",
+        "Errors": [
+          {
+            "NextAction": "3aa2f769-9894-4858-a9c6-94065f05284f",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Um momento, estou localizando o seu cadastro."
+      },
+      "Identifier": "fa434a55-eb2b-4dd9-af77-9700ec546f55",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "9f097278-93a0-41dc-806f-b989e1184758",
+        "Errors": [
+          {
+            "NextAction": "33f0777a-9a48-4182-9941-3d2a6ebebcf6",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "1"
+      },
+      "Identifier": "ee0aeb85-28a1-440e-8abd-9d5f846bdfa4",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "e005cc7b-3ee4-4a62-ab93-0e0349d17d7f",
+        "Conditions": [
+          {
+            "NextAction": "697cb77d-64ec-4ea1-9c9c-b9fbf1cfe72b",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "e005cc7b-3ee4-4a62-ab93-0e0349d17d7f",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "e005cc7b-3ee4-4a62-ab93-0e0349d17d7f",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Não consegui continuar a conversa agora. Por favor, tente novamente em instantes. Obrigada!"
+      },
+      "Identifier": "8ce196f3-3241-44a8-8c0f-83d27e4c8a52",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "009a36d4-5ee1-4e69-8e3b-e44c2ff1994d",
+        "Errors": [
+          {
+            "NextAction": "009a36d4-5ee1-4e69-8e3b-e44c2ff1994d",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "f9829d1b-5bd1-4b7a-a192-0178780655b3",
+      "Type": "TransferContactToQueue",
+      "Transitions": {
+        "NextAction": "2931f4c9-36fa-41c5-9e7f-6734b69e5c29",
+        "Errors": [
+          {
+            "NextAction": "888f0469-bf61-4def-9f78-2d21a616695e",
+            "ErrorType": "QueueAtCapacity"
+          },
+          {
+            "NextAction": "2931f4c9-36fa-41c5-9e7f-6734b69e5c29",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Desculpe, não consegui chamar um atendente agora. Tente novamente em instantes. Obrigada!"
+      },
+      "Identifier": "2931f4c9-36fa-41c5-9e7f-6734b69e5c29",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "009a36d4-5ee1-4e69-8e3b-e44c2ff1994d",
+        "Errors": [
+          {
+            "NextAction": "009a36d4-5ee1-4e69-8e3b-e44c2ff1994d",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Para tentar de novo, diga o que você precisa (por exemplo, segunda via do boleto ou extrato).",
+        "LexV2Bot": {
+          "AliasArn": "arn:aws:lex:us-east-1:<ID_DA_CONTA>:bot-alias/<ID_DO_BOT>/<ID_DO_ALIAS>"
+        }
+      },
+      "Identifier": "4ff58548-de0e-45ac-8db1-65ab06dfecb4",
+      "Type": "ConnectParticipantWithLexBot",
+      "Transitions": {
+        "NextAction": "8ce196f3-3241-44a8-8c0f-83d27e4c8a52",
+        "Conditions": [
+          {
+            "NextAction": "fa434a55-eb2b-4dd9-af77-9700ec546f55",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "SegundaViaBoleto"
+              ]
+            }
+          },
+          {
+            "NextAction": "fa434a55-eb2b-4dd9-af77-9700ec546f55",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ConsultarExtrato"
+              ]
+            }
+          },
+          {
+            "NextAction": "e005cc7b-3ee4-4a62-ab93-0e0349d17d7f",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "FalarComAtendente"
+              ]
+            }
+          },
+          {
+            "NextAction": "7e04579a-06a6-4ace-a76b-147c56d0c333",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "EncerrarConversa"
+              ]
+            }
+          },
+          {
+            "NextAction": "ee0aeb85-28a1-440e-8abd-9d5f846bdfa4",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "FallbackIntent"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "ee0aeb85-28a1-440e-8abd-9d5f846bdfa4",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "8ce196f3-3241-44a8-8c0f-83d27e4c8a52",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Como posso ajudar? Você pode pedir a segunda via do boleto, o extrato do financiamento ou falar com um atendente.",
+        "LexV2Bot": {
+          "AliasArn": "arn:aws:lex:us-east-1:<ID_DA_CONTA>:bot-alias/<ID_DO_BOT>/<ID_DO_ALIAS>"
+        }
+      },
+      "Identifier": "3aa2f769-9894-4858-a9c6-94065f05284f",
+      "Type": "ConnectParticipantWithLexBot",
+      "Transitions": {
+        "NextAction": "8ce196f3-3241-44a8-8c0f-83d27e4c8a52",
+        "Conditions": [
+          {
+            "NextAction": "fa434a55-eb2b-4dd9-af77-9700ec546f55",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "SegundaViaBoleto"
+              ]
+            }
+          },
+          {
+            "NextAction": "fa434a55-eb2b-4dd9-af77-9700ec546f55",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ConsultarExtrato"
+              ]
+            }
+          },
+          {
+            "NextAction": "e005cc7b-3ee4-4a62-ab93-0e0349d17d7f",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "FalarComAtendente"
+              ]
+            }
+          },
+          {
+            "NextAction": "7e04579a-06a6-4ace-a76b-147c56d0c333",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "EncerrarConversa"
+              ]
+            }
+          },
+          {
+            "NextAction": "ee0aeb85-28a1-440e-8abd-9d5f846bdfa4",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "FallbackIntent"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "ee0aeb85-28a1-440e-8abd-9d5f846bdfa4",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "8ce196f3-3241-44a8-8c0f-83d27e4c8a52",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "009a36d4-5ee1-4e69-8e3b-e44c2ff1994d",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "ContactFlowId": "arn:aws:connect:us-east-1:<ID_DA_CONTA>:instance/<ID_DA_INSTANCIA>/contact-flow/<ID_FLUXO_DC_Chat_Pesquisa>"
+      },
+      "Identifier": "7e04579a-06a6-4ace-a76b-147c56d0c333",
+      "Type": "TransferToFlow",
+      "Transitions": {
+        "NextAction": "009a36d4-5ee1-4e69-8e3b-e44c2ff1994d",
+        "Errors": [
+          {
+            "NextAction": "009a36d4-5ee1-4e69-8e3b-e44c2ff1994d",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "HoursOfOperationId": "arn:aws:connect:us-east-1:<ID_DA_CONTA>:instance/<ID_DA_INSTANCIA>/operating-hours/<ID_HORARIO_DE_ATENDIMENTO>"
+      },
+      "Identifier": "e005cc7b-3ee4-4a62-ab93-0e0349d17d7f",
+      "Type": "CheckHoursOfOperation",
+      "Transitions": {
+        "NextAction": "deb9845d-5f96-42dd-8646-857c89f4bcce",
+        "Conditions": [
+          {
+            "NextAction": "deb9845d-5f96-42dd-8646-857c89f4bcce",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "True"
+              ]
+            }
+          },
+          {
+            "NextAction": "423f2d0f-0c9e-47be-a4b3-e529d8cb5ccc",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "False"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "deb9845d-5f96-42dd-8646-857c89f4bcce",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Posso ajudar agora com a segunda via do boleto, o extrato ou encerrar a conversa. O que você prefere?",
+        "LexV2Bot": {
+          "AliasArn": "arn:aws:lex:us-east-1:<ID_DA_CONTA>:bot-alias/<ID_DO_BOT>/<ID_DO_ALIAS>"
+        }
+      },
+      "Identifier": "10feab25-2a97-444a-8410-1575a422b55a",
+      "Type": "ConnectParticipantWithLexBot",
+      "Transitions": {
+        "NextAction": "8ce196f3-3241-44a8-8c0f-83d27e4c8a52",
+        "Conditions": [
+          {
+            "NextAction": "fa434a55-eb2b-4dd9-af77-9700ec546f55",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "SegundaViaBoleto"
+              ]
+            }
+          },
+          {
+            "NextAction": "fa434a55-eb2b-4dd9-af77-9700ec546f55",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ConsultarExtrato"
+              ]
+            }
+          },
+          {
+            "NextAction": "e005cc7b-3ee4-4a62-ab93-0e0349d17d7f",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "FalarComAtendente"
+              ]
+            }
+          },
+          {
+            "NextAction": "7e04579a-06a6-4ace-a76b-147c56d0c333",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "EncerrarConversa"
+              ]
+            }
+          },
+          {
+            "NextAction": "ee0aeb85-28a1-440e-8abd-9d5f846bdfa4",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "FallbackIntent"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "ee0aeb85-28a1-440e-8abd-9d5f846bdfa4",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "8ce196f3-3241-44a8-8c0f-83d27e4c8a52",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Neste momento nossos atendentes não estão disponíveis. Você pode entrar em contato de segunda a sexta, das 8h às 20h para falar com um atendente. Neste momento eu posso te ajudar com a segunda via do boleto e o extrato."
+      },
+      "Identifier": "423f2d0f-0c9e-47be-a4b3-e529d8cb5ccc",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "10feab25-2a97-444a-8410-1575a422b55a",
+        "Errors": [
+          {
+            "NextAction": "10feab25-2a97-444a-8410-1575a422b55a",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Certo, vou chamar um atendente para você. Aguarde um instante."
+      },
+      "Identifier": "deb9845d-5f96-42dd-8646-857c89f4bcce",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "2aab41d8-8dc2-4323-b2e0-daf985fb3cf5",
+        "Errors": [
+          {
+            "NextAction": "2931f4c9-36fa-41c5-9e7f-6734b69e5c29",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:us-east-1:<ID_DA_CONTA>:instance/<ID_DA_INSTANCIA>/queue/<ID_FILA_DC_Atendimento_Geral>"
+      },
+      "Identifier": "51b5dc69-f301-4490-befa-178717a3921c",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "f9829d1b-5bd1-4b7a-a192-0178780655b3",
+        "Errors": [
+          {
+            "NextAction": "2931f4c9-36fa-41c5-9e7f-6734b69e5c29",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "CustomerRemaining": "arn:aws:connect:us-east-1:<ID_DA_CONTA>:instance/<ID_DA_INSTANCIA>/contact-flow/<ID_FLUXO_DC_Chat_Pesquisa>"
+        }
+      },
+      "Identifier": "2aab41d8-8dc2-4323-b2e0-daf985fb3cf5",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "51b5dc69-f301-4490-befa-178717a3921c",
+        "Errors": [
+          {
+            "NextAction": "51b5dc69-f301-4490-befa-178717a3921c",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}
